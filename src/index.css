@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
 
 :root {
-  --ink: #0e0d0c;
-  --ink-soft: #171513;
-  --cream: #f4efe7;
-  --cream-dim: #a89f93;
-  --accent: #ff4a26;
-  --line: rgba(244, 239, 231, 0.12);
+  --ink: #060e07;
+  --ink-soft: #0a1a0b;
+  --cream: #e6f4ea;
+  --cream-dim: #78a882;
+  --accent: #3dba6e;
+  --line: rgba(230, 244, 234, 0.1);
   --display: 'Bricolage Grotesque', sans-serif;
-  --body: 'Hanken Grotesk', sans-serif;
+  --body: 'DM Sans', sans-serif;
 }
 
 *, *::before, *::after {

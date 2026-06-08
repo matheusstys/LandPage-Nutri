@@ -58,19 +58,22 @@
 }
 
 .mock {
-  border-radius: 18px;
+  border-radius: 20px;
   border: 1px solid var(--line);
-  background: #0a0908;
-  min-height: 300px;
-  position: relative;
+  background: #060d07;
+  padding: 32px 28px;
   display: flex;
   flex-direction: column;
+  gap: 14px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
   font-family: var(--display);
   font-weight: 700;
   font-size: 0.78rem;
@@ -81,7 +84,7 @@
 }
 
 .bad .tag {
-  background: rgba(244, 239, 231, 0.1);
+  background: rgba(230, 244, 234, 0.08);
   color: var(--cream-dim);
 }
 
@@ -90,20 +93,14 @@
   color: #fff;
 }
 
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 60px 30px 30px;
-  text-align: center;
+.cardIcon {
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
-.bad .content {
+.bad .cardIcon {
   filter: grayscale(1);
-  opacity: 0.55;
+  opacity: 0.5;
 }
 
 .big {
@@ -113,9 +110,76 @@
   color: var(--cream);
 }
 
+.bad .big {
+  opacity: 0.5;
+}
+
 .small {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--cream-dim);
+  line-height: 1.6;
+}
+
+.bad .small {
+  opacity: 0.5;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.crossItem,
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.crossItem {
+  color: var(--cream-dim);
+  opacity: 0.5;
+}
+
+.checkItem {
+  color: var(--cream);
+}
+
+.crossIcon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(230, 244, 234, 0.08);
+  color: var(--cream-dim);
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(61, 186, 110, 0.18);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.good {
+  border-color: rgba(61, 186, 110, 0.25);
+  box-shadow: 0 0 40px rgba(61, 186, 110, 0.06);
 }
 
 @media (max-width: 720px) {
