@@ -1,0 +1,49 @@
+.section {
+  padding: 110px 0;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.heading {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  max-width: 16ch;
+  margin: 0 auto 28px;
+}
+
+.heading em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.text {
+  font-size: 1.25rem;
+  color: var(--cream-dim);
+  max-width: 46ch;
+  margin: 0 auto;
+}
+
+.text strong {
+  color: var(--cream);
+}
